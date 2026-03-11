@@ -47,8 +47,16 @@ export XDG_CONFIG_HOME="$XDG_STATE_ROOT/config"
 export XDG_CACHE_HOME="$XDG_STATE_ROOT/cache"
 export XDG_DATA_HOME="$XDG_STATE_ROOT/data"
 
+set +e
 "$JADX_BIN" --output-dir "$JADX_OUT" "$APK_PATH"
+JADX_STATUS=$?
+set -e
+
 "$JAVA_BIN" -jar "$APKTOOL_JAR" decode --force --output "$APKTOOL_OUT" "$APK_PATH"
 
 echo "jadx output: $JADX_OUT"
 echo "apktool output: $APKTOOL_OUT"
+
+if [[ "$JADX_STATUS" -ne 0 ]]; then
+  echo "warning: JADX exited with status $JADX_STATUS; inspect output for partial decompilation limits" >&2
+fi
