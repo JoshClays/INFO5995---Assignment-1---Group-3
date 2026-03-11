@@ -18,6 +18,7 @@ decompiled/**/build/
 decompiled/**/dist/
 decompiled/**/.gradle/
 decompiled/**/.idea/
+tools/
 
 # Android / Java
 *.class
