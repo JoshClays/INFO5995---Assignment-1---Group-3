@@ -1,3 +1,5 @@
+# INFO5995 - Assignment 1 - Phase 1 : APK Analysis
+
 # AI Log: Task 1 Decompile Setup
 
 ## Session goal
