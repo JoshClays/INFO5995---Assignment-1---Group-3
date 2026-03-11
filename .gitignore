@@ -1,0 +1,28 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs/temp
+*.log
+*.tmp
+
+# Python
+__pycache__/
+*.pyc
+
+# VS Code
+.vscode/
+
+# Build/decompiler temp output
+decompiled/**/build/
+decompiled/**/dist/
+decompiled/**/.gradle/
+decompiled/**/.idea/
+
+# Android / Java
+*.class
+out/
+build/
+
+# Optional: ignore copied APKs if you want
+# original-apk/*.apk
