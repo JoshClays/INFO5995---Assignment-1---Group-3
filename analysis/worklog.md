@@ -23,3 +23,9 @@
 - Found: the most realistic model is a reverse engineer with local device/emulator access who can observe login timing, reproduce the deterministic token generator, and replay the locally stored session artifact.
 - Conclusion change: threat and impact framing now explicitly centers on local session-token reconstruction/replay, which is strong enough for the assignment while staying within the evidence.
 - Next step: write the mitigation, evidence checklist, and AI log; then commit the final documentation stage.
+
+## 2026-03-14 22:39:14 AEDT
+- Checked: mitigation quality, reusable evidence list, and whether the documentation package is sufficient for report/presentation/Q&A reuse.
+- Found: `SecureRandom` replacement is the direct root-cause fix; the strongest remaining uncertainty is not the weakness itself but the exact end-to-end impact in this local-only APK.
+- Conclusion change: final package now explicitly separates confirmed weakness from impact boundary, which should improve defensibility under questioning.
+- Next step: commit the final documentation set and produce the closing summary with commit hashes and remaining validation items.
