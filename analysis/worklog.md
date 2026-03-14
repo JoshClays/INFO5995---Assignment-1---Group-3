@@ -17,3 +17,9 @@
 - Found: the strongest in-scope issue remains `Login.generateSessionToken()` because it is the only first-party randomness path feeding the explicit session artifact. `getSessionToken()` exists but has no visible first-party caller.
 - Conclusion change: impact statement was tightened to avoid overclaiming. The issue is confirmed as weak session-token generation, while full authorization bypass is not statically proven in the visible APK.
 - Next step: draft the threat model and attack scenario around predictable local session-token creation.
+
+## 2026-03-14 22:38:27 AEDT
+- Checked: what an attacker must actually know and do to exploit the chosen issue in this local-only APK.
+- Found: the most realistic model is a reverse engineer with local device/emulator access who can observe login timing, reproduce the deterministic token generator, and replay the locally stored session artifact.
+- Conclusion change: threat and impact framing now explicitly centers on local session-token reconstruction/replay, which is strong enough for the assignment while staying within the evidence.
+- Next step: write the mitigation, evidence checklist, and AI log; then commit the final documentation stage.
