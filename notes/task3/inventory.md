@@ -1,8 +1,8 @@
 # Task 3 Randomness/Crypto Inventory
 
 ## Scope note
-- Source of truth used for scope: updated Assignment 1 instructions provided in the task prompt, plus code/resource evidence from the decompiled APK.
-- Environment limitation: the updated PDF spec/rubric files are present, but this environment does not currently have a working PDF text extractor. No conclusion below depends on unseen PDF text; the analysis stays aligned to the user-supplied updated marking constraints: focus on randomness/cryptography and prioritize one strong issue.
+- Source of truth used for scope: `assignment_details/assignment1-spec-2.txt`, `assignment_details/assignment1-rubric-2.txt`, and code/resource evidence from the decompiled APK.
+- Spec/rubric alignment applied here: focus on one strong, well-validated randomness/cryptography issue rather than broad bug hunting.
 
 ## Task 2 Validation Status
 

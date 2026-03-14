@@ -29,3 +29,9 @@
 - Found: `SecureRandom` replacement is the direct root-cause fix; the strongest remaining uncertainty is not the weakness itself but the exact end-to-end impact in this local-only APK.
 - Conclusion change: final package now explicitly separates confirmed weakness from impact boundary, which should improve defensibility under questioning.
 - Next step: commit the final documentation set and produce the closing summary with commit hashes and remaining validation items.
+
+## 2026-03-14 23:29:00 AEDT
+- Checked: `assignment_details/assignment1-spec-2.txt` and `assignment_details/assignment1-rubric-2.txt` against the current Task 3 notes and AI log.
+- Found: the Task 3/4 written analysis aligns well with the marked scope and rubric criteria, but the notes still referenced the earlier PDF-tooling limitation and the AI log was missing an explicit rubric-driven mock Q&A summary.
+- Conclusion change: the package needs a small compliance pass, not a finding change. The vulnerability choice and evidence remain the same.
+- Next step: update the notes/AI log to cite the text spec/rubric directly and add a concise compliance audit plus mock Q&A record.
