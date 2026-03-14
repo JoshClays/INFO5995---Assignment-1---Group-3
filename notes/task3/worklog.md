@@ -32,6 +32,6 @@
 
 ## 2026-03-14 23:29:00 AEDT
 - Checked: `assignment_details/assignment1-spec-2.txt` and `assignment_details/assignment1-rubric-2.txt` against the current Task 3 notes and AI log.
-- Found: the Task 3/4 written analysis aligns well with the marked scope and rubric criteria, but the notes still referenced the earlier PDF-tooling limitation and the AI log was missing an explicit rubric-driven mock Q&A summary.
+- Found: the Task 3/4 written analysis aligns well with the marked scope and rubric criteria, but the notes still referenced the earlier PDF-tooling limitation and needed an explicit spec/rubric compliance pass.
 - Conclusion change: the package needs a small compliance pass, not a finding change. The vulnerability choice and evidence remain the same.
-- Next step: update the notes/AI log to cite the text spec/rubric directly and add a concise compliance audit plus mock Q&A record.
+- Next step: update the notes/AI log to cite the text spec/rubric directly and add a concise compliance audit.

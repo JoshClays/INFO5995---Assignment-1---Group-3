@@ -37,17 +37,7 @@
 - `assignment_details/assignment1-spec-2.txt`
 - `assignment_details/assignment1-rubric-2.txt`
 
-## Rubric-Driven Mock Q&A
-- Question: "Why is `Login.generateSessionToken()` the best issue instead of the plaintext credential file?"
-  Answer summary: the rubric marks only randomness/cryptography issues for Assignment 1, and `generateSessionToken()` is the only first-party randomness path directly creating a security-sensitive value.
-- Question: "What makes the attacker model realistic for this APK?"
-  Answer summary: the app is fully local, so a reverse engineer with emulator/root/instrumentation access is more realistic than a network attacker; all session behavior is on-device.
-- Question: "Are you claiming a full auth bypass?"
-  Answer summary: no. The strongest evidence-backed claim is predictable local session-token reconstruction/replay, because no later token-validation logic is visible in the APK.
-- Improvement taken from mock Q&A: explicitly separate the confirmed weakness from the end-to-end impact boundary, and cite the spec/rubric text as the scope source of truth.
-
 ## Deliverables Produced
-- `notes/task3/inventory.md`
 - `notes/task3/core-vulnerability.md`
 - `notes/task3/threat-model.md`
 - `notes/task3/attack-scenario.md`

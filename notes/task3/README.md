@@ -2,7 +2,6 @@
 
 ## Recommended Reading Order
 - `spec-rubric-check.md`: current compliance check against `assignment1-spec-2.txt` and `assignment1-rubric-2.txt`.
-- `inventory.md`: validated Task 2 claims and the full randomness/crypto inventory.
 - `core-vulnerability.md`: selected issue, code path, and why it is the strongest in-scope finding.
 - `threat-model.md`: attacker model tied directly to the chosen vulnerability.
 - `attack-scenario.md`: concrete step-by-step exploitation narrative.

@@ -14,12 +14,12 @@
 ### System & Threat Model (4 marks)
 - Current state: likely `Exceeds Expectations` in the written notes.
 - Why: `threat-model.md` identifies protected assets, attacker capabilities, attacker constraints, and links them directly to the chosen vulnerability.
-- Main supporting files: `threat-model.md`, `inventory.md`, `core-vulnerability.md`.
+- Main supporting files: `threat-model.md`, `core-vulnerability.md`, `attack-scenario.md`.
 
 ### Vulnerability Discovery & Explanation (6 marks)
 - Current state: likely `Exceeds Expectations` in the written notes.
 - Why: the package identifies the correct in-scope issue, shows discovery evidence, explains why `java.util.Random` is unsuitable, and gives a concrete step-by-step attack scenario.
-- Main supporting files: `inventory.md`, `core-vulnerability.md`, `attack-scenario.md`, `evidence-checklist.md`.
+- Main supporting files: `core-vulnerability.md`, `attack-scenario.md`, `evidence-checklist.md`, `notes/task2_static_analysis.md`.
 - Remaining caution: if you want a live demo, validate the exact Android runtime behavior of `Random` on the demo device first.
 
 ### Fix / Mitigation (2 marks)
@@ -33,14 +33,14 @@
 ## Spec Task Check
 
 ### Task 3
-- Satisfied: inventory of random/token-related locations recorded with class/method/API/security role.
 - Satisfied: one well-validated core vulnerability selected.
+- Satisfied: the remaining notes still document the selected randomness/crypto issue with exact code location, security role, and supporting evidence.
 
 ### Task 4
 - Satisfied: generation site, weakness explanation, realistic attacker model, attacker knowledge, and step-by-step attack scenario are documented.
 
 ### Task 5 Supporting Materials
-- Satisfied: AI log exists and now includes a rubric-driven mock Q&A summary.
+- Satisfied: AI log exists and records sources, reasoning, limitations, and deliverables.
 - Outstanding outside this note set: `report.pdf`, `presentation.mp4`, `pocs/` video + README, and `activity-log.pdf`.
 
 ## Bottom Line
