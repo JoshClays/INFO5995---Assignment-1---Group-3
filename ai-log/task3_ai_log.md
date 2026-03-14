@@ -31,13 +31,13 @@
 - Exact runtime seeding details for Android's `Random` implementation were not validated on-device.
 
 ## Deliverables Produced
-- `analysis/task3_randomness_inventory.md`
-- `analysis/task3_core_vulnerability.md`
-- `analysis/task3_threat_model.md`
-- `analysis/task3_attack_scenario.md`
-- `analysis/task3_fix.md`
-- `analysis/task3_evidence_checklist.md`
-- `analysis/worklog.md`
+- `notes/task3/inventory.md`
+- `notes/task3/core-vulnerability.md`
+- `notes/task3/threat-model.md`
+- `notes/task3/attack-scenario.md`
+- `notes/task3/fix.md`
+- `notes/task3/evidence-checklist.md`
+- `notes/task3/worklog.md`
 
 ## Commit Trail So Far
 - `197739f` `validate task2 findings and inventory randomness paths`
