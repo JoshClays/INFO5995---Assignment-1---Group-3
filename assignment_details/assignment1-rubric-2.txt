@@ -1,0 +1,147 @@
+INFO5995 Assignment 1 Rubric
+AI-Assisted Cryptographic Vulnerability Discovery
+Total: 15 marks
+
+Criterion (Marks)
+
+Exceeds Expectations
+
+Meets Expectations
+
+Developing
+
+Incomplete
+
+System & Threat Model (4
+marks)
+
+4 marks: clear system model, key
+assets/data flows, and realistic
+attacker goals/capabilities explicitly
+linked to the chosen vulnerability.
+
+3 marks: main components/assets
+and at least one plausible attacker
+are described; model is mostly
+consistent with the rest of the work.
+
+1–2 marks: partial model (e.g.,
+components/assets only) with
+vague/unrealistic attacker
+assumptions or weak vulnerability
+linkage.
+
+0 marks: system/threat model
+largely missing or factually incorrect.
+
+5–6 marks: correctly identifies a
+security-relevant vulnerability related
+to randomness or cryptographic
+misuse in the provided APK;
+explains discovery method (tooling
+and/or AI), risk, and a concrete
+step-by-step attack.
+
+3–4 marks: identifies the intended (or
+closely related)
+randomness/cryptography
+vulnerability; explains risk and a
+plausible attack with some discovery
+evidence.
+
+1–2 marks: issue is partially correct
+within the randomness/cryptography
+scope, or analysis mixes the intended
+issue with unrelated vulnerabilities;
+attack scenario is vague, incomplete,
+or only loosely related to the real
+risk.
+
+0 marks: no valid
+randomness/cryptography
+vulnerability identified, or
+explanation is mostly incorrect.
+
+Fix / Mitigation (2 marks)
+
+2 marks: proposes a concrete,
+technically sound fix (e.g., replace
+weak randomness with a secure
+alternative) and explains why it
+works.
+
+1.5 marks: proposes a reasonable fix
+addressing the main risk, but with
+minor missing technical
+detail/justification.
+
+0.5–1 mark: fix is vague, incomplete,
+or only partially addresses the real
+problem.
+
+0 marks: no fix or mitigation, or
+suggestion does not address the
+vulnerability.
+
+Recorded Presentation & Q&A
+(3 marks)
+
+3 marks: recorded talk (≤ 5 minutes)
+clearly covers model, vulnerability,
+and fix; delivery is clear, and Q&A
+gives strong evidence-based
+grade/contribution justification.
+
+2 marks: recorded talk (≤ 5 minutes)
+covers main points with generally
+clear delivery; Q&A is adequate but
+with minor grade/contribution
+justification gaps.
+
+1 mark: recorded talk misses key
+elements or is hard to follow; Q&A
+shows limited understanding or weak
+grade/contribution justification.
+
+0 marks: no presentation submitted,
+or recording is unusable.
+
+Vulnerability Discovery &
+Explanation (6 marks)
+
+1
+
+Modified 11 Mar (grading clarification): The rubric above determines marks. The detailed tasks in the assignment specification ask for more
+scaffolding/evidence than is scored directly here, so treat those extra items as supporting materials rather than separate marking buckets. Tutors will
+check both the submitted materials and the recorded presentation/tutorial Q&A. For Assignment 1, the main focus is the presentation and in-person
+Q&A, because they are the strongest evidence that the group understands and has validated the submitted work. If submitted work cannot be explained
+or defended, marks may be reduced under the relevant criteria above.
+Modified 11 Mar (scope): Assignment 1 is marked only on vulnerabilities related to randomness and cryptography in the provided APK. You are not
+expected to investigate every possible vulnerability class in this app. Spending time on unrelated issues will not increase your Assignment 1 mark; save
+broader vulnerability hunting for Assignment 2 Part B.
+Modified 11 Mar (AI use): Using AI to write the report, generate PoC material, or support analysis is permitted. However, you are responsible for
+validating every claim, code fragment, and result you submit. Technical errors, unsupported claims, broken PoCs, or weak answers in Q&A may reduce
+marks under the relevant criteria above.
+
+Modified 11 Mar (required submissions): The required items are report.pdf, ai-log/, pocs/ (videos + README), presentation.mp4, and
+activity-log.pdf. Missing any required item incurs a 5-mark penalty from the Assignment 1 total. Supporting scripts/configuration are recommended
+but optional.
+Timing penalty: presentations must be no longer than 5 minutes. For every additional 10 seconds over the limit, 1 mark will be deducted from the
+Assignment 1 mark (out of 15), even if the rubric performance would otherwise be higher.
+Updated 27 Feb (presentation fairness): in the 5-minute presentation, each team member must speak for at least 40 seconds. If a student’s speaking
+time is t < 40 seconds, that student’s individual Assignment 1 mark becomes ⌊M × t/40⌋, where M is the team Assignment 1 mark (rounded down to
+an integer). Example: if M = 14 and t = 39, then ⌊14 × 39/40⌋ = ⌊13.65⌋ = 13.
+Tutorial format: each group has up to 10 minutes in total (strict): 5 minutes for presentation playback and up to 5 minutes for Q&A if tutors have
+doubts.
+Updated 27 Feb (contribution fairness): teams must submit activity-log.pdf with each member’s contribution summary. Tutors may adjust
+individual grades if contributions are not roughly equal.
+
+2
+
+Modified 11 Mar (activity log format): activity-log.pdf must use an N ×N contribution matrix. Each member writes short notes describing what
+they believe every team member contributed. Example: in a 5-person team, Alice records contributions for Alice/Bob/Chen/Diya/Ethan, Bob records
+contributions for Alice/Bob/Chen/Diya/Ethan, and so on, for 25 short entries in total. Tutors may use inconsistencies when considering individual mark
+adjustments.
+Report compliance penalty: deduct 3 marks if the report exceeds 2 pages or does not use the official USENIX conference paper template.
+
+

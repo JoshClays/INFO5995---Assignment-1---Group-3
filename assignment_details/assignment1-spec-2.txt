@@ -1,0 +1,125 @@
+INFO5995 Assignment 1
+AI-Assisted Cryptographic Vulnerability Discovery
+Weight: 20% of final grade — Marked out of 15 — Group submission (5 students
+preferred; 6 allowed only if at least one member is non-technical)
+
+Overview
+You will analyse one provided Android application package (APK). An APK is the installable
+app package (similar to a .exe); to audit it, you must decompile it and inspect the code.
+No prior Android experience is assumed. The goal is to apply INFO5995 skills in an unfamiliar
+platform: identify assets, build a clear threat model, and assess security-sensitive “random”
+values with AI-assisted workflow support.
+Modified 11 Mar (grading clarification): The rubric is the source of truth for marks. The
+detailed task list below asks for more scaffolding/evidence than is scored directly in the rubric;
+treat those extra items as supporting materials rather than separate marking buckets. Tutors
+will check both your submitted materials and your recorded presentation/tutorial Q&A. For
+Assignment 1, the main focus is the presentation and in-person Q&A, because they are the
+strongest evidence that your group understands and has validated the submitted work.
+Teams should have 5 students. Teams of 6 are allowed only if at least one member is nontechnical (e.g., no previous coding experience). If you are non-technical, we strongly recommend
+joining a technically strong group so you can get peer support during analysis and implementation tasks.
+If a student self-declares as non-technical, the teaching team may assign that student to a
+random group to ensure fair distribution and reduce project risk.
+The assignment is broken into the following steps:
+1. Decompile the APK and set up a working analysis workflow.
+2. Understand app behavior and create a simple system model.
+3. Modified 11 Mar: Find at least one vulnerability related to security-sensitive randomness
+or cryptographic misuse.
+4. Explain the weakness and attacker impact.
+5. Report your findings clearly and concisely.
+
+Detailed Tasks
+1. Task 1: Unpack and Decompile the APK
+• In your own words, define what an APK is and why decompilation is needed for auditing.
+AI support is allowed, but write the final text yourself.
+• Use AI to choose/setup decompilation tooling (for example, jadx, apk-tools). Record at
+least one step-by-step AI interaction.
+• Decompile the APK and confirm you can access package name, main activity, manifest,
+and at least one login/registration class.
+• Include one screenshot of a relevant decompiled class (for example, login logic).
+2. Task 2: Understand the App and Build a Simple Model
+• Ideally, run the app in an emulator/device and interact with it (register, log in, log out).
+If not possible, use tutor demos and static analysis.
+
+1
+
+• In your own words, summarise the app’s purpose and main features in 3–5 sentences.
+• Draw a simple system model showing main components (e.g., UI, storage, external services), important assets (e.g., credentials/tokens), and data flows.
+• State core assumptions and attacker goals (what can be observed/controlled and what the
+attacker aims to achieve).
+3. Task 3: Find at Least One Vulnerability Related to Randomness and Crypto
+• Modified 11 Mar: For Assignment 1, we only mark vulnerabilities related to randomness
+and cryptography in the provided APK. Unrelated vulnerability classes are out of scope
+for Assignment 1 marking.
+• Modified 11 Mar: You are not expected to investigate every possible vulnerability in
+the app. Focus on one strong, well-validated randomness/crypto issue rather than broad
+bug hunting. If you want to spend time exploring unrelated vulnerability classes, save that
+effort for Assignment 2 Part B.
+• Use static analysis to locate all values treated as “random”, “codes”, “tokens”, or similar.
+• For each location, record class/method, generator API/helper, and security role (UI-only,
+identifier, token, key, etc.).
+• With AI help if needed, assess whether any generator/pattern is unsuitable for securitysensitive values (for example, predictable outputs).
+• Select at least one security-relevant weak usage (for example, session/authentication behavior) as your core vulnerability.
+4. Task 4: Explain What Went Wrong and the Threat Model
+• Explain where the value is generated, why the method is unsuitable for its security role,
+and what attacker knowledge/observation is needed to exploit it.
+• Describe a realistic attacker model (e.g., network observer, another app, rooted-device
+user) and concrete capabilities.
+• Provide a short step-by-step attack scenario (for example, prediction/influence leading to
+auth bypass or impersonation).
+5. Task 5: Write Up Your Findings
+• Use the official USENIX paper template (LaTeX or Word): https://www.usenix.org/
+conferences/author-resources/paper-templates. Limit the report to 2 pages max,
+including figures/references.
+• Within those 2 pages, include the following content (you may group headings as you wish,
+but all items must be covered):
+– Short introduction (goal and why APK analysis is used).
+– System/threat model (protected assets, attacker, capabilities).
+– How you found the vulnerability (tooling and AI use, if any).
+– Vulnerability details (code location, risk, exploitation path).
+– Concrete fix/mitigation and why it works.
+• Add an AI usage log (summaries acceptable) as a separate file; include references for
+tools/docs used.
+• Before submission, run at least one rubric-driven LLM mock Q&A. Paste the current
+rubric, answer follow-up questions with evidence, and record key questions/improvements
+in the AI log.
+• Prepare a recorded presentation (≤ 5 minutes) summarising model, vulnerability, and key
+lessons.
+• Modified 11 Mar: You may use AI to draft the report, generate a PoC, or help with
+analysis. This is allowed. However, you must validate what the AI produced. If your
+submitted materials contain technical errors, unsupported claims, broken PoCs, or content
+that you cannot defend in the tutorial, tutors may reduce marks under the relevant rubric
+criteria.
+
+2
+
+Submission Package
+• report.pdf (formatted using the USENIX conference paper template).
+• ai-log/ (prompt-response summaries, validations).
+• pocs/ (videos + README).
+• presentation.mp4 (recorded presentation, ≤ 5 minutes).
+• Modified 11 Mar: activity-log.pdf (required). Use an N × N contribution matrix: each
+team member writes short notes describing what they believe every team member contributed.
+Example: in a 5-person team, Alice records contributions for Alice/Bob/Chen/Diya/Ethan,
+Bob records contributions for Alice/Bob/Chen/Diya/Ethan, and so on, for 25 short entries in
+total. Tutors may adjust individual grades for fairness if contributions are not roughly equal
+or the accounts are inconsistent.
+• Modified 11 Mar: Optional supporting scripts/configuration you used in your analysis.
+Modified 11 Mar (required submissions): The required items are report.pdf, ai-log/,
+pocs/ (videos + README), presentation.mp4, and activity-log.pdf. Missing any required
+item incurs a 5-mark penalty from the Assignment 1 total.
+During the tutorial, each group has up to 10 minutes (strict): 5 minutes presentation playback +
+up to 5 minutes Q&A if needed. In Q&A, students must justify analysis quality, targeted rubric
+level, and each member’s contribution. Rubric-driven LLM rehearsal is strongly recommended.
+Presentations must be no longer than 5 minutes. For every additional 10 seconds over the limit,
+1 mark will be deducted from your Assignment 1 mark (out of 15).
+Updated 27 Feb (presentation fairness): In the 5-minute presentation, each team member
+must speak for at least 40 seconds. If a student’s speaking time is t < 40 seconds, that student’s
+individual Assignment 1 mark becomes ⌊M × t/40⌋, where M is the team Assignment 1 mark
+(rounded down to an integer). Example: if M = 14 and t = 39, then ⌊14 × 39/40⌋ = ⌊13.65⌋ =
+13.
+Report compliance penalty: if your report exceeds 2 pages or does not use the official USENIX
+conference paper template, 3 marks will be deducted from your Assignment 1 mark.
+
+3
+
+
